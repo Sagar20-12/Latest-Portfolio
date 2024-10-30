@@ -9,6 +9,7 @@ import gb from '../../Assets/Projects/gb.jpeg'
 import blog from "../../Assets/Projects/blog.png";
 import chatbot from "../../Assets/Projects/chatbot.png";
 import ttt from "../../Assets/Projects/ttt.jpg";
+import di from "../../Assets/Projects/di.png";
 
 function Projects() {
   return (
@@ -22,6 +23,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={di}
+              isBlog={false}
+              title="Dandelions"
+              description="Developed a website where you can download icons to customise your desktop icons in HD Quality in different colors."
+              ghLink="https://github.com/Sagar20-12/Dandelions"
+              demoLink="https://dandelionsicons.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cf}
