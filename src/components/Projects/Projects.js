@@ -10,6 +10,7 @@ import blog from "../../Assets/Projects/blog.png";
 import chatbot from "../../Assets/Projects/chatbot.png";
 import ttt from "../../Assets/Projects/ttt.jpg";
 import di from "../../Assets/Projects/di.png";
+import bk from "../../Assets/Projects/bk.png";
 
 function Projects() {
   return (
@@ -23,6 +24,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bk}
+              isBlog={false}
+              title="Blitzkrieg"
+              description="Developed a website where you can run your codes in Online IDE which has a support of 4 major different coding languages."
+              ghLink="https://github.com/Sagar20-12/Blitzkrieg"
+              demoLink="https://blitzkrieg-beryl.vercel.app/"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={di}
